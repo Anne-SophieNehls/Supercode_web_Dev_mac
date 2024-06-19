@@ -1,0 +1,60 @@
+h1{
+    font-size: xx-large;
+}
+
+p{
+    font-size: medium;
+
+}
+
+
+ul{
+    padding-inline-start: 1.2em;
+    list-style: none;
+}
+
+.pets{ border: 2px solid black;
+
+}
+
+.dog{ 
+    font-size: 0.8em;
+
+}
+.dog  li::before{
+    content: "🐶";
+}
+
+.cat{
+    font-size: 0.8em;
+
+}
+.cat  li::before{
+    content: "🐱";
+}
+
+.parrot{
+    font-size: 0.8em;
+
+}
+.parrot li::before{
+    content: "🦜";
+}
+
+.snake{
+    font-size: 0.8em;
+}
+
+.snake  li::before{
+    content: "🐍";
+}
+
+.lizzard{
+    font-size: 0.8em;
+
+}
+.lizzard{
+    li::before{
+        content: "🦎";
+    }
+}

@@ -1,0 +1,27 @@
+div{
+    display: inline;
+}
+
+.px{
+    width: 500px;
+}
+
+.percent{
+    width: 50%;
+}
+
+.em{
+width: 20em;
+}
+
+.rem{
+    width: 40rem;
+}
+
+.vw{
+    width: 35vm;
+}
+
+.vh{
+    width: 75vh;
+}
