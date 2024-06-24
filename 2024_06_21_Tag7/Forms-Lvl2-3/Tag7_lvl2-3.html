@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Level-2_3</title>
+    <link rel="stylesheet" href="./assets/CSS/Tag7_lvl2-3.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="url">
+        <fieldset>
+            <legend>
+                Registrier dich hier:
+            </legend>
+
+            <section class="text">
+                <label for="text"> Name </label>
+                <input type="text" name="" id="" placeholder="Name">
+            </section>
+
+            <section class="text">
+                <label for="text"> Surname </label>
+                <input type="text" name="" id="" placeholder="Surname">
+            </section>
+
+            <section class="mail">
+                <label for="mail"> EMail</label>
+                <input type="email" id="" required placeholder="Email ">
+            </section>
+
+        <section>
+            <label for="radio">Gender </label>
+        <div>
+            <input type="radio" name="gender" id="radioFEMALE" checked>
+            <label for="radioJa">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="radioMALE">
+            <label for="radioNein">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="radioNON">
+            <label for="radioVielleicht">Non Binary</label>
+        </div>
+    </section>
+
+            <section>
+                <div>
+                    <input type="file" id="file">
+                </div>
+            </section>
+
+            <section>
+                <label>Country</label>
+                <div>
+                    <select name="" id="">
+                        <option value="GR">Germany</option>
+                        <option value="US">USA</option>
+                        <option value="UK">England</option>
+                        <option value="FR">France</option>
+                        <option value="MX">Mexiko</option>
+                        <option value="BR">Brasilien</option>
+                    </select>
+                </div>
+            </section>
+
+<!--             <section>
+                <label>Preferred language</label>
+                <div>
+                    <input type="checkbox" id="checkboxHTML">
+                    <label for="checkboxHose">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxCSS">
+                    <label for="checkboxShirt">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxJS">
+                    <label for="checkboxSchuhe">Java Skript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxReact">
+                    <label for="checkboxSchuhe">React</label>
+                </div>
+            </section> -->
+          
+        <section>
+            <label>Preferred language</label>
+
+            <select name="menu[Preferred language]" multiple="multiple" size="4"> 
+                <option value="HTML">  HTML </option>
+                <option value="CSS">  CSS </option>
+                <option value="Java Skript"> Java Skript </option>
+                <option value="React">  React </option>
+               …
+            </select>
+        </section>
+            <section>
+                <label> Fields of activity</label>
+                <div>
+                    <input type="checkbox" id="checkboxIT">
+                    <label for="checkboxHose">IT</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxDesign">
+                    <label for="checkboxShirt">Design</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkboxOther">
+                    <label for="checkboxOther">Other</label>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <input type="button" value="Cancel">
+                </div>
+                <div>
+                    <input type="submit" value="senden">
+                </div>
+            </section>
+        </fieldset>
+    </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -22,7 +22,7 @@
 
 .paralax{
     position: relative;
-    opacity: 0.75;
+    opacity: 0.95;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,6 +122,27 @@ button{
 }
 /* Button Style bereich ende */
 
+/* start Button Hover */
+
+.btndrk:hover{
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+}
+
+.btndrk:hover+.nmbrdrk{
+    background-color: white;
+}
+
+.btnlght:hover{
+    color: var(--secondary-color);
+    background-color: var(--third-color);
+}
+
+.btnlght:hover+.nmbrlght{ 
+    color: var(--secondary-color);
+}
+
+/* ende Button Hover */
 
 img{ display: block;
     margin-left: auto;
@@ -223,3 +244,31 @@ a{
     padding-top: 70px;
     margin: 0 auto;
     }
+
+
+/* #heart span{
+        display: block;
+        margin: 0 auto;
+        font-size: 3rem;
+        text-align: center;
+        animation: beat 1.5s ease 0s infinite;
+    }
+#heart:before {
+        z-index: -2;
+        animation: beat-before 1.5s ease-out 200ms infinite;}
+        
+#heart:after {
+        z-index: -1;
+        animation: beat-after 1.5s ease-out 400ms infinite;}
+      
+      @keyframes beat {
+        0% { transform: scale(1);}
+        50% { transform: scale(2.1);}}
+      
+      @keyframes beat-before {
+        0% { transform: scale(1);}
+        50% { transform: scale(0.8);}}
+      
+      @keyframes beat-after {
+        0% { transform: scale(1);  }
+        50% { transform: scale(1.6);}} */

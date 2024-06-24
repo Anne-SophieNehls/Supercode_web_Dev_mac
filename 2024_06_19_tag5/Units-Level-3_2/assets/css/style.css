@@ -20,7 +20,7 @@ body {
 
 /* hintere Ebene */
 #background-video {
-    background-image:
+    background-image: url()
     ;
     position: relative;
     width: 100%;

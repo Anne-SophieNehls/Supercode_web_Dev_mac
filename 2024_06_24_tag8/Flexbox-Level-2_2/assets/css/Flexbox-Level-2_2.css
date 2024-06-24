@@ -1,0 +1,117 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+}
+
+a:hover{
+    color: rgb(55, 46, 103);
+}
+
+header{
+    color: rgb(52, 51, 51);
+    padding: 30px;
+    border-bottom: 1px solid rgb(60, 60, 60) ;
+
+ /*    display: flex; 
+    align-items: center;
+    justify-content:space-between; */
+   font-weight: normal;
+}
+
+nav:first-child{
+    font-size: 30px;
+    
+}
+
+nav{
+    display: flex; 
+    align-items: center;
+    
+    margin: 0 10%;
+    justify-content:space-between;
+}
+
+ul{
+    display: flex; 
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+
+}
+
+body{
+    align-items: center;
+    margin: 0 auto;
+}
+
+section{
+    background-image: url(../img/photo-1443527216320-7e744084f5a7-1.jpg.png);
+    max-width: 100%;
+    height: 80vh;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-size: center;
+    display: flex;
+    flex-direction: column; /* sobald die Flex direction sich ändert, muss auch align item umd justify contenten angepasst werden */
+    align-items: center; 
+    justify-content: center; 
+    gap: 5%;
+
+}
+
+h2{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 8px rgb(82, 82, 82);
+}
+
+p{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 8px rgb(82, 82, 82);
+}
+
+.btn_wrappr a{
+    display: block;
+}
+
+.btn_wrappr{
+    display: flex;
+    gap: 20px;
+}
+
+.lila_btn{
+    padding: 15px 30px;
+    background-color: #745CF9;
+    color: white;
+    border: none;
+}
+
+.clear_btn{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+button:hover{
+    color: #745CF9;
+    background-color: white;
+}
