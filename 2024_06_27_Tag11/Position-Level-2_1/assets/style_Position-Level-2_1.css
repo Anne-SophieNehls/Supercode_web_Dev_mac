@@ -12,7 +12,10 @@ body{
 }
 
 section{ 
-    size: 35% 70%;
+    position: relative;
+    width: 30%;
+    left: 10%;
+    top: 20vh;
 }
 
 h1{
@@ -22,6 +25,7 @@ h1{
 
 p{
     font-family: Poppins;
+    margin-bottom: 50px;
 }
 
 button{
@@ -30,4 +34,10 @@ button{
     border: 2px solid #767676;
     border-radius: 10px;
     font-family: Poppins;
+}
+
+img{
+    position: fixed;
+    left: 50%;
+    top: 10%
 }
