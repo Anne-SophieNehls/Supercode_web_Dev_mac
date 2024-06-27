@@ -15,7 +15,7 @@ html{
     font-style: none;
 }
 
-
+/* *************** */
 
 body{
     background-color:  #1D2025;
@@ -24,21 +24,83 @@ body{
 
 .logo{
     font-family: "Monoton";
+    font-size: 3rem;
+    margin: 20px;
 }
 
 nav{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: #1D2025;
+    border-bottom: 1px solid #6F6864;
+    z-index: 5;
 
 }
 
-section:nth-of-type(1){
+a{
+    color: #6F6864;
+    text-decoration: none;
+    margin: 0 50px;
+}
 
+a:hover{
+    color: #F1F1F1;
+
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: ;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+/* *************** */
+
+section:nth-of-type(1){
+    margin-bottom: 50vh;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    padding-top: 30vh;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.orange{
+    color: #B0805D;
+    font-size: 1.2rem;
+}
+
+.strich{
+    letter-spacing: -0.2rem;
+    margin: 15px;
 }
 
 
 section:nth-of-type(2){
+    position: absolute;
+    left: 650px;
+    top: 30%;
+    margin-bottom: 100px;
+    margin: 15px;
     
 }
 
@@ -49,9 +111,10 @@ section:nth-of-type(3) img{
 }
 
 section:nth-of-type(3){
-    position: fixed;
+    position: static;
     left: 40px;
-    bottom: 40;
+    bottom: 40px;
+    padding-bottom: 20px;
 }
 
 
@@ -60,6 +123,8 @@ section:nth-of-type(4) p{
     margin: 5px;
     border: 1px solid #B0805D;
     border-radius: 25px;
+    background-color: #1D2025;
+    font-weight: 700;
     
 }
 
