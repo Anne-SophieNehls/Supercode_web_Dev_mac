@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./font/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Playfair";
+    src: url("./font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+body{
+    background-color: #EDF0E2;
+}
+
+section{ 
+    size: 35% 70%;
+}
+
+h1{
+    font-family: Playfair;
+    font-size: 3rem;
+}
+
+p{
+    font-family: Poppins;
+}
+
+button{
+    background-color: #FFAA36;
+    padding: 15px 30px;
+    border: 2px solid #767676;
+    border-radius: 10px;
+    font-family: Poppins;
+}
