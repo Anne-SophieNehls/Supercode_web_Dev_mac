@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* ****************************** */
+
+
+    /*? Grid Area */
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "header header header header"
+    "blau blau grun grun"
+    "blau blau lila violet"; 
+}
+
+.box1{
+    background-color: red;
+    grid-area: header;
+}
+
+.box2{
+    background-color: rgb(0, 17, 255);
+    grid-area: blau;
+}
+
+.box3{
+    background-color: rgb(0, 255, 51);
+    grid-area: grun;
+}
+
+.box4{
+    background-color: purple;
+    grid-area: lila;
+}
+.box5{
+    background-color: purple;
+    grid-area: violet;
+}
+
+
+/* ?Grid Nummerierung? */
+/*  
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat (4, 250px);
+    grid-template-rows:  repeat (3, 250px);
+    gap: 10px;
+}
+
+.box1{
+    background-color: red;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+.box2{
+    background-color: rgb(0, 17, 255);
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.box3{
+    background-color: rgb(0, 255, 51);
+    grid-column: 3/2;
+    grid-row: 2/4;
+}
+
+.box4{
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.box5{
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row: 4/5;
+} */
