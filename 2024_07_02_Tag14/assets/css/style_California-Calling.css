@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family: "Work";
+    src: url("../font/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Iner";
+    src: url("../font/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Work";
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Iner";
+    font-weight: 800;
+}
+
+img{
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 70svw;
+    height: auto;
+}
+
+/* ********************************************* */
+/* ____________Background Color____________ */
+
+header, footer, .bg_black{
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+.bg_white{
+    min-height: 40svh;
+    padding-left: 5%;
+
+}
+
+.bg_gray{
+    background-color: #cccccc;
+    padding: 5%;
+    z-index: 35;
+
+}
+
+/* ********************************************* */
+/* ____________text styles____________ */
+
+h1{
+    font-size: 3rem;
+    line-height: 80%;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h5{
+    font-size: 5rem;
+    color: black;
+}
+
+.outline{
+    -webkit-text-stroke: 2px white;
+    color: black;
+}
+
+b{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p{
+    font-family: "Work";
+
+}
+
+small{
+    font-size: 12px;
+}
+/* ************************** */
+
+.header_line{
+    width: 50svw;
+    height: 10svh;
+    border-right: 1px solid gray;
+}
+
+.header_title{
+    text-align: center;
+    width: 40svw;
+    margin: 0 auto;
+    padding: 15vh 0;
+}
+
+.header_title p{
+    padding: 10px;
+}
+
+.bear_button{
+    display: flex;
+    margin: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bear_button img{
+    height: 40px;
+}
+
+button{
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* article div{
+    max-width: 60svw;
+} */
+
+section:nth-of-type(1) img{
+    width: 25svw;
+    height: 18svh;
+}
+
+article:first-of-type{
+    background-image: url("../img/map.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat ;
+}
+
+h2:first-of-type{
+    width: 70svw;
+    padding-top: 10rem;
+}
+
+article:first-of-type div{
+    width: 40svw;
+    padding: 10svh 0;
+
+}
+
+/* ____________ bereich 2 _______________ */
+
+.textblock{
+    width: 50svw;
+    margin: 10svh auto;
+}
+
+/* ____________ Footer _______________ */
+
+footer{
+    overflow: hidden;
+}
+
+footer div:first-of-type{
+    width: 40svw;
+}
+
+.sozial_media{
+    display: inline;
+}
+
+.sozial_media img{
+    width: auto;
+    height: 50px;
+}
+
+.partners img{
+    width: 120px;
+    height: auto;
+}
+
+.white_line{
+    background-color: white;
+    height: 100px;
+    width: 170%;
+    transform: rotate(45deg);
+}
+
+.outline_2019{
+    -webkit-text-stroke: 3px black;
+    color: white;
+}
+
+/* ____________ Animation _______________ */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+  .animate_rotate{
+    width: 30svw;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    animation: rotate 10s linear infinite normal;
+  }
+  
+  @keyframes balken {
+    from {
+        transform: translateX(0%)
+    }
+    to{
+        transform: translateX(75%)
+
+  }
+  }
+
+  .animate_balken{
+    animation: balken 10s linear infinite alternate;
+  }
