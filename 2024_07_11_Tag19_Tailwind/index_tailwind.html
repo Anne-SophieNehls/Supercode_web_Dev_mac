@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="lemonade">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>übung Tailwind - Muttis Ferienwohnung aufbessern</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              margin: {
+                "mein-margin": "10rem",
+              },
+/*               colors: {
+                "meine-farbe": "#234672",
+              }, */
+            },
+          },
+        };
+      </script>
+      <style type="text/tailwindcss">
+        @layer base {
+
+        @font-face {
+          font-family: "Karla";
+          src: url(./assets/fonts/Karla-Regular.ttf)
+            format("ttf");
+        }
+
+        @font-face {
+          font-family: "Lora";
+          src: url(./assets/fonts/Lora-VariableFont_wght.ttf)
+            format("ttf");
+        }
+
+        @font-face {
+          font-family: "Baskerv";
+          src: url(./assets/fonts/BaskervvilleSC-Regular.ttf)
+            format("ttf");
+        }
+          h1 {
+            @apply text-5xl "Baskerv";
+          }
+          h2 {
+            @apply text-3xl font-semibold mb-4 "Lora";
+          }
+          h3 {
+            @apply text-2xl "Lora";
+          }
+          a {
+            @apply p-4 text-lg "Lora";
+          }
+          p {
+            @apply text-xl mb-4 "Karla";
+          }
+        }
+      </style>
+</head>
+<body>
+    <header id="header" class="h-screen bg-[url('./assets/umgebung/landschaf1.jpeg')] bg-cover text-white px-16 mb-24">
+        <h1 >Landferien in Schleswig-Hollstein</h1>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Wohnung">die Wohnung</a>
+            <a href="#Preise">Preise</a>
+            <a href="#Aktivitaeten">Aktivitäten und Umgebung</a>
+            <a href="#Kontakt">Kontakt</a>
+            <a href="#Anfahrt">Anfahrt</a>
+        </nav>
+        <!-- <div>
+            <p>↑ oben</p>
+            <a href="#header"></a>
+        </div> -->
+    </header>
+    <main>
+        <section id="Home">
+            <h2>Willkommen</h2>
+            <div>
+                <p>
+                    <b>Sie suchen ein ruhiges Plätzchen zum Erholen?</b> Wir wohnen in einem kleinen Ort in dörflicher Randlage. Hinter unserem Grundstück ist nur noch Wiese und Naturschutzgebiet.
+                </p>
+                <img src="./assets/umgebung/garten2.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./assets/umgebung/mohnfeld.jpg" alt="">
+                <p>
+                   <b>Sie wollen aber trotzdem alles zeitnah mit dem Auto erledigen? </b> Panten liegt im Städtedreieck Hamburg, Lübeck, Schwerin, am Elbe-Lübeck-Kanal. Somit ist dies ein idealer Ausgangspunkt für viele Unternehmungen. 
+                </p>
+            </div>
+            <div>
+                <p>
+                    Der Elbe-Lübeck-Kanal mit seinem Radfahrweg ist nur 1km entfernt. Viele Seen in unserer Gegend - Lankau, Behlendorf, Mölln und Ratzeburg, laden zum Erkunden und Verweilen ein.
+                </p>
+                <img src="./assets/umgebung/elbe-luebeck-kanal-09.webp" alt="">
+            </div>
+            <div>
+                <img src="./assets/umgebung/Lauenburgische-Seen.avif" alt="">
+                <p>
+                    Im Südosten des Landes Schleswig-Holstein in der reizvollen Wald- und Seenlandschaft des Kreises Herzogtum Lauenburg liegt der Naturpark "Lauenburgische Seen".
+                </p>
+            </div>            
+            <div>
+                <p>
+                    Der Naturpark mit seinen Sehenswürdigkeiten lädt zum Radfahren und  Wandern ein. Endlos erscheinende Wälder und dazu viel Wasser, das sind die hervorzuhebenden Merkmale der lauenburgischen Landschaft. Dazu die herrlichen Alleen, viele zum Teil sumpfige Brachflächen, wo noch Kraniche brüten. 
+                </p>
+                <img src="./assets/umgebung/kuh1.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/umgebung/winter3.jpg" alt="">
+                <p>
+                    Geprägt durch Land- und Forstwirtschaft steht hier eine Urlaubsregion zur Verfügung, die zum Erlebnis wird. Zahlreiche Schlösser, Herrenhäuser und alte Kirchen fügen sich in das Gesamtbild ein. Zentren des Naturparks sind die mittelalterliche Stadt Mölln, die durch den Narren "Till Eulenspiegel" weithin bekannt ist und die Kreisstadt Ratzeburg mit ihrer Ruderakademie. 
+                </p>
+            </div>
+        </section>
+
+    
+        <section id="Wohnung">
+          <div>
+            <h3>Unsere Nichtraucher-Ferienwohnung  
+            </h3>
+            <p>... liegt in der 1. Etage und  hat ca. 65 m² für 4 Personen. Geschirr, Handtücher und Bettwäsche werden gestellt.  
+                
+                Die Wohnung hat eine Zentralheizung.  
+                
+                Der Wohnraum hat einen Fernseher mit Satelitenempfang und einen LAN-Internetanschluß. 
+                
+                Die Küchenzeile ist mit allem ausgestattet, was sie so für den Urlaub benötigen - Kaffeemaschine, Toaster, Wasserkocher, Mikrowelle etc. 
+                
+                Das Schlafzimmer ist mit einem Doppelbett und einem Schrank ausgestattet. 
+                
+                In dem kleinen Zimmer sind zwei Einzelbetten und einem Schrank. 
+                
+                Im Badezimmer befinden sich eine Badewanne, plus Duschvorrichtung, und eine Waschmaschine.  
+                 </p>
+              </div>
+
+              <div class="carousel carousel-end rounded-box h-500px">
+                    <div class="carousel-item h-500px">
+                      <img src="assets/wohnung/kueche.jpg" alt="kueche" />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/wohnung/bett.jpg"
+                        alt="bett" />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/wohnung/couch.jpg"
+                        alt="couch" />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/wohnung/schlaftimmer.jpg"
+                        alt="schlafzimmer" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/wohnung/wanne.jpeg" alt="wanne" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/wohnung/wohnung5.jpeg" alt="Drink" />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                          src="assets/wohnung/wohnung7.jpeg"
+                          alt="Drink" />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/wohnung/wohnung8.jpeg"
+                          alt="Drink" />
+                      </div>
+              </div>
+                  
+
+        </section>
+
+
+        <section id="Preise">
+            <h3>Preise und Belegung </h3>
+            <p>
+                Der Preis pro Übernachtung für 2 Personen  beträgt 40,00 Euro. 
+                Die Preise gelten ab 3 Übernachtungen für 2 Personen.  
+                Jede weitere Person 6,00 Euro.  
+                
+                Bei geringerer Übernachtung nehmen wir einen zusätzlichen Aufpreis  von 8,00 Euro pro Person.  
+                Wir nehmen eine Anzahlung von 10%.  
+
+                Ab 15 Übernachtungen geben wir 10% Rabatt auf den Endpreis.
+
+                Haustiere auf Anfrage und dann ebenfalls 6,00 Euro pro Tier/Übern.
+                
+                Inklusive Bettwäsche, Handtücher und Endreinigung.
+            </p>
+
+        </section>
+
+
+        <section id="Aktivitaeten">
+            <h2>Beliebte Aktivitäten in unserer Umgebung</h2>
+            <article>
+                <h3>Erlebnishof Nehls</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+            <article>
+                <h3>Mölln</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+            <article>
+                <h3>Ratzeburg</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+            <article>
+                <h3>Lübeck</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+            <article>
+                <h3>Schalsee und umliegende Gewässer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+            <article>
+                <h3>Schmetterlingspark</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste veritatis rem culpa a voluptate dolor delectus doloremque veniam consequatur? Architecto pariatur veritatis dignissimos eligendi, consequatur eum perspiciatis quas quidem commodi quam dolorum eos repudiandae aperiam fuga tempora voluptas molestias sapiente.</p>
+                <a href=""><button>zur Website</button></a>
+            </article>
+
+
+        </section>
+
+
+        <section id="Kontakt">
+            <div>
+                <div>
+                    <h3> Haben Sie Interesse? Dann schreiben Sie mir. </h3>
+                    <p>Ich freuen uns über Ihre Nachricht. </p>
+                    <p>Lieben Gruß, Ulrike Nehls</p>
+                </div>
+                <img src="./assets/sonstiges/ulrike-avatar.png" alt="" class="h-1/5 rounded-full">
+            </div>
+            <form action="">
+                      <label>Anrede:</label>
+                        <select name="Anrede">
+                          <option value="Verkauf">Herr</option>
+                          <option value="Einkauf">Frau</option>
+                          <option value="Service">Ohne Anrede</option>
+                        </select>
+                      <label>Vorname:</label>
+                        <input maxlength="50" name="Vorname" size="45" type="text" />
+                      <label>Nachname:</label>
+                        <input name="Nachname" size="45" type="text" />
+                      <lable>Email:</lable>
+                        <input name="Email" size="45" type="text" />
+                      <label>Telefonnummer:</label>
+                        <input name="Telefon" size="45" type="number" />
+                      <label>Mobil:</label>
+                        <input name="Mobil" size="45" type="number" />
+                      <label>Zeitraum für eine Buchungsanfrage:</label>
+                          <p>von</p>
+                          <input type="date">
+                          <p>bis</p>
+                          <input type="date">
+                      <label>Mitteilung:</label>
+                        <textarea cols="30" rows="5" name="Mitteilung">Ihre Mitteilung</textarea>
+                        <input type="submit" value="Abschicken" />
+            </form>
+        </section>
+
+        <section id="Anfahrt">
+            <h3>
+                Anfahrt
+            </h3>
+            
+            <p>
+                BAB 24  Abfahrt Talkau B 207  
+                Richtung Mölln  
+                
+                (Ausfahrt Mölln Süd) Kreisstraße  
+
+                Richtung Nusse
+                In Hammer rechts abbiegen Richtung Panten. 
+            </p>
+
+        </section>
+
+
+        <footer>
+            <p>©  Anne-Spohie und Ulrike Nehls</p>
+            <a href="">Impressum</a>
+           <!--  <p>Ulrike Nehls, Dorfstraße 25, 23896 Panten
+                Tel.: 04543/1667, mobil: 01744958846, email: ru-nehls@t-online.de</p> -->
+            <a href="">Log in</a>
+        </footer>
+    </main>
+    
+</body>
+</html>
