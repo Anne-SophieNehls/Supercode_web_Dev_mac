@@ -1,0 +1,212 @@
+header img {
+  margin: 20px 45%;
+}
+header nav {
+  align-items: center;
+  color: #957554;
+  padding: 50px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  color: #957554;
+}
+header nav ul a p {
+  font-size: 2.5rem;
+}
+
+#hero {
+  background-image: url(../img/hero_image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;
+  width: 100svw;
+  height: 80svh;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#hero h1 {
+  font-size: 4rem;
+  font-family: "Ubuntu-reg";
+  padding: 10px;
+}
+#hero p {
+  font-size: 1.2rem;
+}
+#hero button {
+  font-size: 1.2rem;
+  margin: 40px;
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.service p {
+  text-align: center;
+  font-family: "Ubuntu-reg";
+  font-size: 1.6rem;
+  color: #957554;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+section h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+section button {
+  margin: 40px 30%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10vh;
+  margin: 10vh;
+}
+.grid div {
+  border-radius: 15px;
+}
+
+.bild_1 {
+  background-image: url(../img/standard_twin_room.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;
+  height: 70vh;
+}
+
+.bild_2 {
+  background-image: url(../img/standard_room.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;
+}
+
+.bild_3 {
+  background-image: url(../img/deluxe_room.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;
+}
+
+.bild_4 {
+  background-image: url(../img/standard_view_room.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: fill;
+}
+
+.BookNow {
+  margin-left: 42%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  /*     div{
+          display: flex;
+          flex-direction: column;
+      } */
+  gap: 20%;
+}
+footer b {
+  margin-top: 30px;
+}
+footer div {
+  margin-left: 30px;
+}
+footer div a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+footer .footer_links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer form label {
+  font-size: 1.4rem;
+}
+footer form input {
+  height: 45px;
+  width: 200px;
+  color: gainsboro;
+}
+
+@font-face {
+  font-family: "Ubuntu-reg";
+  src: url("../../font/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-med";
+  src: url("../../font/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url("../../font/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-light";
+  src: url("../../font/Ubuntu-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu-reg";
+}
+
+button {
+  background-color: #DFAA5B;
+  color: white;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px;
+  margin: 20px 0%;
+  width: 200px;
+}
+
+h2 {
+  color: #957554;
+  font-size: 3rem;
+}
+
+h3 {
+  color: white;
+  font-size: 2.8rem;
+  margin-top: 40vh;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

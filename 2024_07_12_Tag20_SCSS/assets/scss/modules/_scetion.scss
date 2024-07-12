@@ -1,0 +1,80 @@
+@use 'sass:meta';
+@use '../base/_mixins.scss';
+@use '../base/_variables.scss';
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    p{
+        text-align: center;
+        font-family: 'Ubuntu-reg';
+        font-size: 1.6rem;
+        color: #957554;
+
+    }
+}
+
+section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h2{
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    button{
+        margin: 40px 30%;    
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10vh;
+    margin: 10vh;
+
+    div{
+        border-radius: 15px;
+
+    }
+
+}
+
+.bild_1{
+    background-image: url(../img/standard_twin_room.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+    height: 70vh;
+}
+
+.bild_2{
+    background-image: url(../img/standard_room.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+}
+
+.bild_3{
+    background-image: url(../img/deluxe_room.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+}
+
+.bild_4{
+    background-image: url(../img/standard_view_room.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+}
+
+.BookNow{
+    margin-left: 42%;
+}

@@ -1,0 +1,32 @@
+@use 'sass:meta';
+@use '../base/_mixins.scss';
+@use '../base/_variables.scss';
+
+#hero{
+    background-image: url(../img/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: fill;
+    width: 100svw;
+    height: 80svh;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 4rem;
+        font-family: 'Ubuntu-reg';
+        padding: 10px;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    button{
+        font-size: 1.2rem;
+        margin: 40px;
+    }
+}

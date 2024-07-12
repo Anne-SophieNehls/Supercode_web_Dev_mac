@@ -51,6 +51,7 @@ header, footer, .bg_black{
     background-color: #cccccc;
     padding: 5%;
     z-index: 35;
+    height: 175vh;
 
 }
 
@@ -93,10 +94,10 @@ p{
 small{
     font-size: 12px;
 }
-/* ************************** */
-
+/* ********************************************* */
+/* ____________header____________ */
 .header_line{
-    width: 50svw;
+    width: 48svw;
     height: 10svh;
     border-right: 1px solid gray;
 }
@@ -141,16 +142,18 @@ section:nth-of-type(1) img{
     width: 25svw;
     height: 18svh;
 }
+/* ********************************************* */
+/* ____________first section____________ */
 
 article:first-of-type{
     background-image: url("../img/map.svg");
     background-size: 50% 50%;
     background-repeat: no-repeat ;
+    background-position: bottom right;
 }
 
 h2:first-of-type{
     width: 70svw;
-    padding-top: 10rem;
 }
 
 article:first-of-type div{
@@ -159,11 +162,123 @@ article:first-of-type div{
 
 }
 
-/* ____________ bereich 2 _______________ */
+/* ____________ Grid _______________ */
+
+.grid_chaos{
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    grid-template-rows: repeat(18, 5.55%);
+}
+
+
+.img-one{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row: 0 1;
+    margin-top: -30px;
+}
+
+.img-two{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-left: 15px;
+
+}
 
 .textblock{
-    width: 50svw;
-    margin: 10svh auto;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.img-three{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    margin-left: 25px;
+
+}
+
+.img-four{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.img-five{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+.img-six{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 14;
+    grid-row-end: 16;
+
+}
+
+.grid_chaos p{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 14;
+    grid-row-end: 16;
+    margin-left: -15px;
+
+}
+
+.img-seven{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 17;
+    grid-row-end: 19;
+    z-index: -20;
+}
+/* ____________ golden Bear _______________ */
+.CartoonBear{
+    position: relative; 
+    top: 70vh; 
+    left: 2%;
+    width: 750px;
+    height: 750px;
+
+}
+
+.Magnets{
+    position: relative; 
+    top: 10vh; 
+    left: 60%;
+    height: 360px;
+    width: auto;
+    z-index: 15;
+
+}
+
+
+/* ____________ poppy bear _______________ */
+.poppyBear{
+    position: relative; 
+    top: -40vh; 
+    left: 23%;
+    width: 750px;
+    height: 750px;
+}
+
+.AlyssaShirt{
+    position: relative; 
+    top: 60vh; 
+    left: 2%;
+    height: 360px;
+    width: auto;
+    z-index: 15;
+
 }
 
 /* ____________ Footer _______________ */
@@ -176,18 +291,34 @@ footer div:first-of-type{
     width: 40svw;
 }
 
+.sm_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 150px;
+}
+
+.footer_text{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
 .sozial_media{
     display: inline;
 }
 
 .sozial_media img{
     width: auto;
-    height: 50px;
+    height: 20px;
 }
 
 .partners img{
     width: 120px;
     height: auto;
+}
+.partners{
+    margin-top: 10vh;
+    margin-left: 60vw;
 }
 
 .white_line{
@@ -195,6 +326,8 @@ footer div:first-of-type{
     height: 100px;
     width: 170%;
     transform: rotate(45deg);
+    margin-top: -320px;
+    margin-left: 70px;
 }
 
 .outline_2019{
@@ -226,8 +359,11 @@ footer div:first-of-type{
     width: 30svw;
     height: auto;
     position: absolute;
-    z-index: 10;
     animation: rotate 10s linear infinite normal;
+    z-index: -30;
+    margin-left: 70%;
+    margin-top: -130px;
+
   }
   
   @keyframes balken {
@@ -236,8 +372,7 @@ footer div:first-of-type{
     }
     to{
         transform: translateX(75%)
-
-  }
+    } 
   }
 
   .animate_balken{

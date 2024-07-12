@@ -1,0 +1,63 @@
+@use 'base/mixins';
+@use 'base/variables';
+@use 'modules/header';
+@use 'modules/hero';
+@use 'modules/scetion';
+@use 'sass:meta';
+@use 'modules/footer';
+
+
+
+@font-face {
+    font-family: 'Ubuntu-reg';
+    src: url('../../font/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu-med';
+    src: url('../../font/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu-bold';
+    src: url('../../font/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu-light';
+    src: url('../../font/Ubuntu-Light.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Ubuntu-reg';
+}
+
+button{
+    background-color: #DFAA5B;
+    color: white;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px;
+    margin: 20px 0%;
+    width: 200px;
+
+}
+
+h2{
+    color: #957554;
+    font-size: 3rem;
+}
+
+h3{
+    color: white;
+    font-size: 2.8rem;
+    margin-top: 40vh;
+    text-align: center;
+}
